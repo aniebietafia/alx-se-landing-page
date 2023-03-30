@@ -60,9 +60,9 @@
             </div>
 <!--feature info-->
             <div class="feature-info">
-                <h4>Vetted Apartments</h4>
+                <h4>User Authentication</h4>
                 <p>
-                    When an apartment is posted on our platform by the Home-Owner, the status of that apartment to set to be 'under review' which gives our users the clear perspective that the apartment is not yet verified. The 'admin' is responsible for changing the status of the apartment to 'verified' after a thorough assessment has been made to verify the authenticity of the apartment.
+                    All users are authenticated before accessing the resources that are available on the application. Authentication is done using JWT. The token is created and verified in a middleware function and then a response is generated using cookie which is made available by the browser. The cookie is attached to every request and parsed to the server using an npm package called cookie-parser. All users are required to signup before using the resources.
                 </p>
             </div>
         </article>
@@ -73,9 +73,9 @@
             </div>
             <!--feature info-->
             <div class="feature-info">
-                <h4>Search Filter</h4>
+                <h4>User Authorization</h4>
                 <p>
-                    The search filter makes it easy for our users to filter through the  thousands of posted apartments in order to narrow their search based on their preferred apartment choice. This will prevent users sorting endlessly through the available apartments looking for their preferred home.
+                    There are 3 categories of users available in the application. These users are identified by their roles in the userSchema - 'admin', 'home-owner' and 'student'. There is only one user assigned with the admin privileges and have total control of all activities in the application including CRUD operations. The home-owners can perform CRUD actions but only on resources that is created by the user while the student can only access the resources and make a choice of the apartment to rent. The actions of each user is clearly defined in the project.
                 </p>
             </div>
         </article>
@@ -86,9 +86,9 @@
             </div>
             <!--feature info-->
             <div class="feature-info">
-                <h4>Save to Favorites</h4>
+                <h4>Hosting Images on Cloudinary</h4>
                 <p>
-                    You are not ready to pay for the apartment just yet? No problem! We've got you covered with the save to favorites feature. This feature allows users to save any lodge that they are interested in to favorites to prevent going back to look for that apartment. The apartment will remain available as long as someone else has not yet taken it.
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet autem blanditiis consectetur consequuntur est facilis illum inventore ipsum magnam maiores modi mollitia nemo nihil nisi numquam officia perferendis possimus quaerat qui quia, repellat repudiandae, rerum suscipit ut velit vero voluptate! Animi eveniet harum hic id incidunt recusandae, sequi? Dignissimos distinctio est fugit id laborum odit sequi soluta totam voluptate.
                 </p>
             </div>
         </article>
